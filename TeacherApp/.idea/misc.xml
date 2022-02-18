@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/CollegeApp/TeacherApp/app/src/main/res/drawable/ic_add_notice.xml" value="0.28" />
+        <entry key="..\:/CollegeApp/TeacherApp/app/src/main/res/drawable/ic_baseline_mail_24.xml" value="0.28" />
+        <entry key="..\:/CollegeApp/TeacherApp/app/src/main/res/drawable/ic_dept.xml" value="0.28" />
+        <entry key="..\:/CollegeApp/TeacherApp/app/src/main/res/drawable/ic_designation.xml" value="0.28" />
+        <entry key="..\:/CollegeApp/TeacherApp/app/src/main/res/drawable/ic_icon_ionic_md_home.xml" value="0.28" />
+        <entry key="..\:/CollegeApp/TeacherApp/app/src/main/res/drawable/ic_teacher_id.xml" value="0.28" />
+        <entry key="..\:/CollegeApp/TeacherApp/app/src/main/res/layout/activity_home.xml" value="0.33" />
+        <entry key="..\:/CollegeApp/TeacherApp/app/src/main/res/layout/activity_main.xml" value="0.34479166666666666" />
+        <entry key="..\:/CollegeApp/TeacherApp/app/src/main/res/layout/dropdown_item_attendance.xml" value="0.34479166666666666" />
+        <entry key="..\:/CollegeApp/TeacherApp/app/src/main/res/layout/fragment_aboutus.xml" value="0.34479166666666666" />
+        <entry key="..\:/CollegeApp/TeacherApp/app/src/main/res/layout/fragment_add_notice.xml" value="0.34479166666666666" />
+        <entry key="..\:/CollegeApp/TeacherApp/app/src/main/res/layout/fragment_map.xml" value="0.2830269345874305" />
+        <entry key="..\:/CollegeApp/TeacherApp/app/src/main/res/layout/fragment_teacher_notice.xml" value="0.34479166666666666" />
+        <entry key="..\:/CollegeApp/TeacherApp/app/src/main/res/layout/fragment_teacher_work.xml" value="0.2830269345874305" />
+        <entry key="..\:/CollegeApp/TeacherApp/app/src/main/res/layout/item_notice.xml" value="0.28986746472851643" />
+        <entry key="..\:/CollegeApp/TeacherApp/app/src/main/res/layout/item_take_attendance.xml" value="0.2830269345874305" />
+        <entry key="..\:/CollegeApp/TeacherApp/app/src/main/res/layout/item_weekdays.xml" value="0.28986746472851643" />
+        <entry key="..\:/CollegeApp/TeacherApp/app/src/main/res/layout/login_screen.xml" value="0.2830269345874305" />
+        <entry key="..\:/CollegeApp/TeacherApp/app/src/main/res/layout/nav_header_student.xml" value="0.2830269345874305" />
+        <entry key="..\:/CollegeApp/TeacherApp/app/src/main/res/layout/splash_screen.xml" value="0.2830269345874305" />
+        <entry key="..\:/CollegeApp/TeacherApp/app/src/main/res/layout/teacher_attendance_fragment.xml" value="0.2830269345874305" />
+        <entry key="..\:/CollegeApp/TeacherApp/app/src/main/res/layout/teacher_profile_fragment.xml" value="0.23300090661831369" />
+        <entry key="..\:/CollegeApp/TeacherApp/app/src/main/res/menu/menu_bottom.xml" value="0.2830269345874305" />
+        <entry key="..\:/CollegeApp/TeacherApp/app/src/main/res/menu/menu_logout.xml" value="0.2830269345874305" />
+        <entry key="..\:/CollegeApp/TeacherApp/app/src/main/res/menu/menu_navigation_drawer.xml" value="0.2830269345874305" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_X" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

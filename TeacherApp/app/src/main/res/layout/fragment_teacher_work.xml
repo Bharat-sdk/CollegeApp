@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/app_background"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelinestart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".05" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".95" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:id="@+id/btn_assignments"
+            android:layout_marginTop="40dp"
+            android:text="Give Assignments"
+            android:textAllCaps="false"
+            android:textSize="22sp"
+            android:fontFamily="@font/mons_semibold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/guidelinestart"
+            app:layout_constraintEnd_toStartOf="@id/guidelineend"
+            style="@style/ThemeOverlay.Material3.Button.ElevatedButton"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:id="@+id/btn_attendance"
+            android:layout_marginTop="80dp"
+            android:text="Take Attendance"
+            android:textAllCaps="false"
+            android:textSize="22sp"
+            android:fontFamily="@font/mons_semibold"
+            app:layout_constraintTop_toBottomOf="@id/btn_assignments"
+            app:layout_constraintStart_toEndOf="@id/guidelinestart"
+            app:layout_constraintEnd_toStartOf="@id/guidelineend"
+            style="@style/ThemeOverlay.Material3.Button.ElevatedButton"
+            />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

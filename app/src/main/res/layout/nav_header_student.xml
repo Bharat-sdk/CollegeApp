@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+        android:background="@color/app_theme_color">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/navigation_profile_pic"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="18dp"
+            android:padding="4dp"
+            android:src="@drawable/abc_vector_test"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/circular"
+            app:strokeColor="@color/white"
+            app:strokeWidth="4dp" />
+
+
+
+            <TextView
+                android:id="@+id/navigation_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="P N Bharat Kumar"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/navigation_profile_pic"
+                app:layout_constraintStart_toEndOf="@+id/navigation_profile_pic"
+                app:layout_constraintTop_toTopOf="@+id/navigation_profile_pic"
+                android:textSize="20sp" />
+
+
+
+
+            <TextView
+                android:id="@+id/nav_txt_uid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UID - "
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="@id/navigation_profile_pic"
+                app:layout_constraintTop_toBottomOf="@id/navigation_profile_pic"
+                android:layout_marginTop="50dp"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/navigation_uid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TNU2018020100004"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toTopOf="@id/nav_txt_uid"
+                app:layout_constraintBottom_toBottomOf="@id/nav_txt_uid"
+                app:layout_constraintStart_toEndOf="@id/nav_txt_uid"
+                android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/nav_txt_semester"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SEMESTER - "
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@id/nav_txt_uid"
+            app:layout_constraintTop_toBottomOf="@id/nav_txt_uid"
+            android:layout_marginTop="50dp"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/navigation_semester"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7th Semester"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toTopOf="@id/nav_txt_semester"
+            app:layout_constraintBottom_toBottomOf="@id/nav_txt_semester"
+            app:layout_constraintStart_toEndOf="@id/nav_txt_semester"
+            android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/nav_txt_dept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="DEPATMENT - "
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/nav_txt_semester"
+        app:layout_constraintTop_toBottomOf="@id/nav_txt_semester" />
+
+    <TextView
+            android:id="@+id/navigation_dept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B.Tech CSE (CS)"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toTopOf="@id/nav_txt_dept"
+            app:layout_constraintBottom_toBottomOf="@id/nav_txt_dept"
+            app:layout_constraintStart_toEndOf="@id/nav_txt_dept"
+            android:textSize="16sp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

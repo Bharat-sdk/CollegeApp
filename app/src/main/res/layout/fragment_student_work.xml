@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/app_background"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelinestart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".05" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".95" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:id="@+id/btn_assignments"
+            android:layout_marginTop="40dp"
+            android:text="Assignments"
+            style="@style/ThemeOverlay.Material3.Button.ElevatedButton"
+            android:textAllCaps="false"
+            android:textSize="22sp"
+            android:fontFamily="@font/mons_medium"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/guidelinestart"
+            app:layout_constraintEnd_toStartOf="@id/guidelineend"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:id="@+id/btn_attendance"
+            android:layout_marginTop="80dp"
+            android:text="Attendance"
+            android:elevation="16dp"
+            android:textAllCaps="false"
+            android:textSize="22sp"
+            android:fontFamily="@font/mons_medium"
+            app:layout_constraintTop_toBottomOf="@id/btn_assignments"
+            app:layout_constraintStart_toEndOf="@id/guidelinestart"
+            app:layout_constraintEnd_toStartOf="@id/guidelineend"
+            style="@style/ThemeOverlay.Material3.Button.ElevatedButton"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:id="@+id/btn_timetable"
+            android:layout_marginTop="80dp"
+            android:text="Time Table"
+            android:textAllCaps="false"
+            android:textSize="22sp"
+            android:fontFamily="@font/mons_medium"
+            android:elevation="16dp"
+            app:layout_constraintTop_toBottomOf="@id/btn_attendance"
+            app:layout_constraintStart_toEndOf="@id/guidelinestart"
+            app:layout_constraintEnd_toStartOf="@id/guidelineend"
+            style="@style/ThemeOverlay.Material3.Button.ElevatedButton"
+            />
+       <!-- <Button
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:id="@+id/btn_teacheravailibality"
+            android:layout_marginTop="80dp"
+            android:text="Teacher Availability"
+            android:textAllCaps="false"
+            android:textSize="22sp"
+            android:fontFamily="@font/mons_medium"
+            android:elevation="16dp"
+            app:layout_constraintTop_toBottomOf="@id/btn_timetable"
+            app:layout_constraintStart_toEndOf="@id/guidelinestart"
+            app:layout_constraintEnd_toStartOf="@id/guidelineend"
+            style="@style/ThemeOverlay.Material3.Button.ElevatedButton"
+            />
+-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

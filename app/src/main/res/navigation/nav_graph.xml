@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/postFragment">
+
+    <fragment
+        android:id="@+id/postFragment"
+        android:name="com.makertech.collegeapp.ui.posts.PostFragment"
+        android:label="Notice" />
+    <fragment
+        android:id="@+id/workFragment"
+        android:name="com.makertech.collegeapp.ui.works.WorkFragment"
+        android:label="Works" >
+        <action
+            android:id="@+id/action_workFragment_to_studentAttendanceFragment"
+            app:destination="@id/studentAttendanceFragment" />
+        <action
+            android:id="@+id/action_workFragment_to_weekdayFragment"
+            app:destination="@id/weekdayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/studentAttendanceFragment"
+        android:name="com.makertech.collegeapp.ui.studentAttendance.StudentAttendanceFragment"
+        android:label="Check Attendance" />
+    <fragment
+        android:id="@+id/studentTimeTableFragmnent"
+        android:name="com.makertech.collegeapp.ui.studentTimetable.StudentTimeTableFragmnent"
+        android:label="Today's TimeTable" >
+        <argument
+            android:name="dayOfWeek"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/weekdayFragment"
+        android:name="com.makertech.collegeapp.ui.studentTimetable.WeekdayFragment"
+        android:label="TimeTable" >
+        <action
+            android:id="@+id/action_weekdayFragment_to_studentTimeTableFragmnent"
+            app:destination="@id/studentTimeTableFragmnent"
+            app:popUpTo="@id/studentTimeTableFragmnent" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.makertech.collegeapp.ui.map.MapFragment"
+        android:label="Student Profile" />
+    <fragment
+        android:id="@+id/aboutUsFragment"
+        android:name="com.makertech.collegeapp.ui.aboutUs.AboutUsFragment"
+        android:label="About TNU" />
+</navigation>

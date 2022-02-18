@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/postFragment"
+        android:icon="@drawable/notice_icon"
+        android:title="Notice" />
+    <item
+        android:id="@+id/workFragment"
+        android:icon="@drawable/ic_icon_work"
+        android:title="Work" />
+    <item
+        android:id="@+id/mapFragment"
+        android:icon="@drawable/profile_icon"
+        android:title="Profile" />
+    <item
+        android:id="@+id/aboutUsFragment"
+        android:icon="@drawable/ic_icon_mail"
+        android:title="About Us" />
+</menu>

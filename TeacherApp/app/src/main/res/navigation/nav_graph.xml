@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/postFragment">
+
+    <fragment
+        android:id="@+id/postFragment"
+        android:name="com.makertech.tnuteacherapp.ui.posts.PostFragment"
+        android:label="Notices" >
+        <action
+            android:id="@+id/action_postFragment_to_addPostFragment"
+            app:destination="@id/addPostFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.makertech.tnuteacherapp.ui.map.MapFragment"
+        android:label="Teacher Profile" />
+    <fragment
+        android:id="@+id/aboutUsFragment"
+        android:name="com.makertech.tnuteacherapp.ui.aboutUs.AboutUsFragment"
+        android:label="About TNU" />
+    <fragment
+        android:id="@+id/workFragment"
+        android:name="com.makertech.tnuteacherapp.ui.works.WorkFragment"
+        android:label="Work" >
+        <action
+            android:id="@+id/action_workFragment_to_teacherAttendanceFragment"
+            app:destination="@id/teacherAttendanceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addPostFragment"
+        android:name="com.makertech.tnuteacherapp.ui.posts.AddPostFragment"
+        android:label="Add Notice" />
+    <fragment
+        android:id="@+id/teacherAttendanceFragment"
+        android:name="com.makertech.tnuteacherapp.ui.attendance.TeacherAttendanceFragment"
+        android:label="Take Attendance" />
+</navigation>

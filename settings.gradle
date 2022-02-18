@@ -1,0 +1,12 @@
+import org.gradle.api.initialization.resolve.RepositoriesMode
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+    repositories {
+        google()
+        maven { url "https://jitpack.io"}
+        mavenCentral()
+    }
+}
+rootProject.name = "CollegeApp"
+include ':app'

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/header_assignment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/check_attendance"
+        android:textColor="@color/app_theme_color"
+        android:fontFamily="@font/mons_bold"
+        android:textSize="32sp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+   <com.google.android.material.textfield.TextInputLayout
+       style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+       android:id="@+id/layout_select_subject"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Subject"
+       android:layout_marginTop="80dp"
+       android:layout_marginStart="32dp"
+       android:layout_marginEnd="32dp"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@id/header_assignment">
+       <AutoCompleteTextView
+           android:id="@+id/txt_subject_for_attendance"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:inputType="none"
+           android:textColor="#3C3737"
+           android:fontFamily="@font/mons_semibold"
+           android:text="Select The Subject"
+           />
+   </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/layout_present"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_select_subject"
+        >
+    <TextView
+        android:id="@+id/txt_Present"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No. Of Days Present"
+        android:textColor="@color/app_theme_color"
+        android:fontFamily="@font/mons_semibold"
+        android:textSize="22sp"
+       />
+
+    <TextView
+        android:id="@+id/txt_presentValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="22"
+        android:textColor="@color/app_theme_color"
+        android:fontFamily="@font/mons_semibold"
+        android:layout_marginStart="30dp"
+        android:textSize="22sp"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_absent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="@id/layout_present"
+        app:layout_constraintStart_toStartOf="@id/layout_present"
+        app:layout_constraintTop_toBottomOf="@id/layout_present"
+        >
+        <TextView
+            android:id="@+id/txt_Absent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No. of Days Absent"
+            android:fontFamily="@font/mons_semibold"
+            android:textColor="@color/app_theme_color"
+            android:textSize="22sp"
+            />
+
+
+        <TextView
+            android:id="@+id/txt_absentValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mons_bold"
+            android:textColor="@color/app_theme_color"
+            android:textSize="22sp"
+            android:text="25"
+            android:layout_marginStart="30dp"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_get_attendance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/ThemeOverlay.Material3.Button.ElevatedButton"
+        app:layout_constraintTop_toBottomOf="@id/layout_absent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Get Attendance"
+        android:fontFamily="@font/mons_semibold"
+        android:textColor="@color/white"
+        android:layout_marginTop="50dp"
+        android:padding="12dp"
+        />
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/loading_anim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/btn_get_attendance"
+        app:layout_constraintEnd_toEndOf="@id/btn_get_attendance"
+        app:layout_constraintTop_toTopOf="@id/btn_get_attendance"
+        app:layout_constraintBottom_toBottomOf="@id/btn_get_attendance"
+        app:lottie_rawRes="@raw/blue_loading"
+        android:visibility="invisible"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

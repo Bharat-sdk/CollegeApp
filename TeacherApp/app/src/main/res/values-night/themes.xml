@@ -1,0 +1,33 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.TnuTeacherApp" parent="Theme.MaterialComponents.DayNight">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/app_theme_color</item>
+        <item name="colorPrimaryVariant">#1B92DF</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="circular">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="NavigationTheme" parent="Theme.TnuTeacherApp">
+        <item name="listPreferredItemHeightSmall">60dp</item>
+
+    </style>
+    <style name="CustomShapeApperance">
+        <item name="neumorph_cornerFamily">rounded</item>
+        <item name="neumorph_backgroundColor">@color/app_theme_color</item>
+        <item name="neumorph_shadowElevation">6dp</item>
+        <item name="neumorph_shadowColorLight">@color/highlight</item>
+        <item name="neumorph_shadowColorDark">@color/shadow_color</item>
+        <item name="neumorph_shapeType">flat</item>
+        <item name="neumorph_cornerSize">6dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.05"
+        android:orientation="horizontal"
+        />
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/profile_pic"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:padding="4dp"
+        android:src="@drawable/tnu_logo_splash_screen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline_top"
+        app:shapeAppearanceOverlay="@style/circular"
+        app:strokeColor="@color/app_theme_color"
+        app:strokeWidth="4dp" />
+
+
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="P N Bharat Kumar"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/mons_bold"
+        android:textColor="@color/app_theme_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@id/profile_pic"/>
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/layout_profile_email"
+        android:layout_width="wrap_content"
+        android:foregroundGravity="center"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_name"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/app_background"
+        app:neumorph_shapeAppearance="@style/CustomShapeApperance"
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_baseline_mail_24"
+            android:layout_gravity="center"
+            />
+
+    </soup.neumorphism.NeumorphCardView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@id/layout_profile_email"
+        app:layout_constraintBottom_toBottomOf="@id/layout_profile_email"
+        app:layout_constraintTop_toTopOf="@id/layout_profile_email">
+        <TextView
+            android:fontFamily="@font/mons_bold"
+            android:layout_width="wrap_content"
+            android:textColor="@color/app_theme_color"
+
+            android:layout_height="wrap_content"
+            android:text="Email"
+            />
+        <TextView
+            android:id="@+id/profile_email"
+
+            android:fontFamily="@font/mons_semibold"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:textColor="@color/app_theme_color"
+            android:layout_height="wrap_content"
+            android:text="email@gmail.com"
+            />
+    </LinearLayout>
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/layout_profile_subject"
+        android:layout_width="wrap_content"
+        android:foregroundGravity="center"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_profile_email"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/app_background"
+        app:neumorph_shapeAppearance="@style/CustomShapeApperance"
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_designation"
+            android:layout_gravity="center"
+            />
+
+    </soup.neumorphism.NeumorphCardView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@id/layout_profile_subject"
+        app:layout_constraintBottom_toBottomOf="@id/layout_profile_subject"
+        app:layout_constraintTop_toTopOf="@id/layout_profile_subject">
+        <TextView
+            android:fontFamily="@font/mons_bold"
+            android:layout_width="wrap_content"
+            android:textColor="@color/app_theme_color"
+            android:layout_height="wrap_content"
+            android:text="Department"
+            />
+        <TextView
+            android:id="@+id/profile_department"
+            android:fontFamily="@font/mons_semibold"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:textColor="@color/app_theme_color"
+            android:layout_height="wrap_content"
+            android:text="CSE DA"
+            />
+    </LinearLayout>
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/layout_profile_uid"
+        android:layout_width="wrap_content"
+        android:foregroundGravity="center"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_profile_subject"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/app_background"
+        app:neumorph_shapeAppearance="@style/CustomShapeApperance"
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_teacher_id"
+            android:layout_gravity="center"
+            />
+
+    </soup.neumorphism.NeumorphCardView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@id/layout_profile_uid"
+        app:layout_constraintBottom_toBottomOf="@id/layout_profile_uid"
+        app:layout_constraintTop_toTopOf="@id/layout_profile_uid">
+        <TextView
+            android:fontFamily="@font/mons_bold"
+            android:layout_width="wrap_content"
+            android:textColor="@color/app_theme_color"
+            android:layout_height="wrap_content"
+            android:text="Student ID"
+            />
+        <TextView
+            android:id="@+id/profile_uid"
+            android:fontFamily="@font/mons_semibold"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:textColor="@color/app_theme_color"
+            android:layout_height="wrap_content"
+            android:text="TNUID02111"
+            />
+    </LinearLayout>
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/layout_profile_sem"
+        android:layout_width="wrap_content"
+        android:foregroundGravity="center"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_profile_uid"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/app_background"
+        app:neumorph_shapeAppearance="@style/CustomShapeApperance"
+        >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:src="@drawable/semester_icon" />
+
+    </soup.neumorphism.NeumorphCardView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@id/layout_profile_sem"
+        app:layout_constraintBottom_toBottomOf="@id/layout_profile_sem"
+        app:layout_constraintTop_toTopOf="@id/layout_profile_sem">
+        <TextView
+            android:fontFamily="@font/mons_bold"
+            android:layout_width="wrap_content"
+            android:textColor="@color/app_theme_color"
+            android:layout_height="wrap_content"
+            android:text="Semester"
+            />
+        <TextView
+            android:id="@+id/profile_semester"
+            android:fontFamily="@font/mons_semibold"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:textColor="@color/app_theme_color"
+            android:layout_height="wrap_content"
+            android:text="TNUID02111"
+            />
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
