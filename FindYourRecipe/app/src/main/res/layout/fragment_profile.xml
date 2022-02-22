@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/fragment_profile_pic"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@color/app_theme_color"
+        app:shapeAppearance="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHeight_percent=".15"
+        app:layout_constraintDimensionRatio="1:1"
+        />
+    <TextView
+        android:id="@+id/fragment_profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/fragment_profile_pic"
+        android:text="Sheldon Cooper"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@id/fragment_profile_pic"
+        app:layout_constraintEnd_toEndOf="@id/fragment_profile_pic"
+        android:textAlignment="center"
+        android:fontFamily="@font/mons_bold"
+        android:textSize="22sp"
+        />
+
+    <TextView
+        android:id="@+id/fragment_profile_favorites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/fragment_profile_name"
+        android:text="Favorites"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="10dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/mons_bold"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fragment_recyclerview_favorites"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/fragment_profile_favorites"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="4dp"
+        />
+    <TextView
+        android:id="@+id/fragment_profile_your_recipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/fragment_recyclerview_favorites"
+        android:text="My Recipes"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="10dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/mons_bold"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fragment_recyclerview_your_recipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/fragment_profile_your_recipe"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="4dp"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

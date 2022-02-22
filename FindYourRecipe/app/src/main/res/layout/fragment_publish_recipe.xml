@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/txt_upload_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Dish Image"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:fontFamily="@font/mons_semibold"
+        android:layout_marginStart="12dp"
+        />
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/btn_upload_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintTop_toBottomOf="@id/txt_upload_image"
+        app:layout_constraintStart_toStartOf="@id/txt_upload_image"
+        app:layout_constraintEnd_toEndOf="@id/txt_upload_image"
+        app:srcCompat="@drawable/ic_baseline_add_a_photo_24"
+        app:strokeColor="@color/app_theme_color"
+        android:layout_marginTop="10dp"
+        app:strokeWidth="2dp"
+        />
+    <TextView
+        android:id="@+id/txt_upload_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/btn_upload_image"
+        android:layout_marginTop="30dp"
+        android:textColor="#121111"
+        app:layout_constraintStart_toStartOf="parent"
+        android:fontFamily="@font/mons_semibold"
+        android:layout_marginStart="12dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edit_text"
+        android:padding="8dp"
+        android:paddingStart="10dp"
+        app:layout_constraintTop_toBottomOf="@id/txt_upload_name"
+        android:hint="Apple Pie"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="4dp"
+
+        />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
