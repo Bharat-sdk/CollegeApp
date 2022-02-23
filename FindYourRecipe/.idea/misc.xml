@@ -5,6 +5,7 @@
       <map>
         <entry key="..\:/CollegeApp/FindYourRecipe/app/src/main/res/drawable/ic_outine_favorite.xml" value="0.294" />
         <entry key="..\:/CollegeApp/FindYourRecipe/app/src/main/res/drawable/rounded_edit_text.xml" value="0.294" />
+        <entry key="..\:/CollegeApp/FindYourRecipe/app/src/main/res/drawable/title_over_image.xml" value="0.294" />
         <entry key="..\:/CollegeApp/FindYourRecipe/app/src/main/res/layout/fragment_categories.xml" value="0.34479166666666666" />
         <entry key="..\:/CollegeApp/FindYourRecipe/app/src/main/res/layout/fragment_dish_feed.xml" value="0.34479166666666666" />
         <entry key="..\:/CollegeApp/FindYourRecipe/app/src/main/res/layout/fragment_profile.xml" value="0.33" />
@@ -15,7 +16,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_X" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_16" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
